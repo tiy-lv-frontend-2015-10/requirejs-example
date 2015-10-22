@@ -7,15 +7,12 @@ requirejs.config({
   }
 });
 
-define([
-  'jquery',
-  'main'
-],
-function(
-  $,
-  main
-){
+var reqs = ['jquery', 'main'];
+
+var initialize = function ($, main) {
   $(document).ready(function(){
     main.init();
   });
-});
+}
+
+define(reqs, initialize);

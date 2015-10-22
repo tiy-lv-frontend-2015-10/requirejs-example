@@ -1,7 +1,7 @@
 define([
   'jquery',
   'mustache',
-  'text!../templates/names.html'
+  'text!/templates/names.html'
 ], function(
   $,
   Mustache,
